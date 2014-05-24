@@ -1,0 +1,20 @@
+CREATE TABLE programme (
+       channel text,
+       start text,
+       stop text,
+       duration integer,
+       title text,
+       freeCA integer,
+       video integer,
+       audio integer,
+       desc string,
+       extdesc string,
+       UNIQUE( channel, start )
+);
+CREATE TABLE category (
+       channel text,
+       start text,
+       category text,
+       middle text,
+       UNIQUE( channel, start, category, middle )
+);

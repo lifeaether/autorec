@@ -1,0 +1,21 @@
+CREATE TABLE programme (
+	event_id integer primary key,
+	channel text,
+	title text,
+	start text,
+	stop text,
+	duration integer,
+	freeCA integer,
+	video integer,
+	audio integer,
+	desc string,
+	extdesc string,
+	UNIQUE( event_id, channel )
+);
+CREATE TABLE category (
+	event_id integer,
+	channel text,
+	category text,
+	middle text,
+	UNIQUE( event_id, channel, category, middle )
+);

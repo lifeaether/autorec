@@ -1,0 +1,1 @@
+title like '%魔法科高校の劣等生%' AND NOT channel like 'GR3_%'
