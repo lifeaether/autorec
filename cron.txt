@@ -1,0 +1,5 @@
+SHELL=/bin/sh
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+15 * * * * cd /home/user && /bin/sh ./epg_update.sh && /bin/sh ./resv_update.sh
+
